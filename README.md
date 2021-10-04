@@ -14,3 +14,9 @@ keystroke visualizer for Windows, lets you easily display your keystrokes while 
 ## License
 
 MIT License
+
+-----
+
+## 汉化修改
+
+> UI界面汉化
