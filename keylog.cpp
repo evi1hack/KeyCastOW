@@ -1,4 +1,4 @@
-// Copyright 漏 2014 Brook Hong. All Rights Reserved.
+// Copyright ? 2014 Brook Hong. All Rights Reserved.
 //
 
 #include <stdio.h>
@@ -12,7 +12,7 @@ struct Key {
     LPCWSTR label;
 };
 struct Key specialKeys[] = {
-    {0x08, L"Backspace"},                 // back
+    {0x08, L"Backspace"},                 // Backspace
     {0x09, L"Tab"},
     {0x0C, L"Clear"},
     {0x0D, L"Enter"},              // enter
@@ -30,7 +30,7 @@ struct Key specialKeys[] = {
     {0x1D, L"Nonconvert"},
     {0x1E, L"Accept"},
     {0x1F, L"ModeChange"},
-    {0x20, L"Space"},              // space
+    {0x20, L"空格"},              // space
     {0x21, L"PageUp"},
     {0x22, L"PageDown"},
     {0x23, L"End"},
@@ -129,37 +129,38 @@ struct Key specialKeys[] = {
     {0xFB, L"ZOOM"},
     {0xFC, L"NONAME"},
     {0xFD, L"PA1"},
+    {0xFF, L"Fn"},
     {0xFE, L"OEM_CLEAR"}
 };
 
 size_t nSpecialKeys = sizeof(specialKeys) / sizeof(Key);
 
 LPCWSTR mouseActions[] = {
-    L"MouseMove",
-    L"LButtonDown",
-    L"LButtonUp",
-    L"LButtonDBLCLK",
-    L"RButtonDown",
-    L"RButtonUp",
-    L"RButtonDBLCLK",
-    L"MButtonDown",
-    L"MButtonUp",
-    L"MButtonDBLCLK",
-    L"MouseWheel",
-    L"XButtonDown",
-    L"XButtonUp",
-    L"XButtonDBLCLK",
-    L"MouseHWheel"
+    L"鼠标移动",          //MouseMove
+    L"左键按下",          //LButtonDown
+    L"左键松开",          //LButtonUp
+    L"左键按住",          //LButtonDBLCLK
+    L"右键按下",          //RButtonDown
+    L"右键松开",          //RButtonUp
+    L"右键按住",          //RButtonDBLCLK
+    L"中键按下",          //MButtonDown
+    L"中键松开",          //MButtonUp
+    L"中键按住",          //MButtonDBLCLK
+    L"滚轮",              //MouseWheel
+    L"侧键按下",          //XButtonDown
+    L"侧键松开",          //XButtonUp
+    L"侧键按住",          //XButtonDBLCLK
+    L"其他滚轮"           //MouseHWheel
 };
 LPCWSTR mouseClicks[] = {
-    L"LClick",
-    L"RClick",
-    L"MClick"
+    L"点击左键",            //LClick
+    L"点击右键",            //RClick
+    L"点击中键"             //MClick
 };
 LPCWSTR mouseDblClicks[] = {
-    L"LDblClick",
-    L"RDblClick",
-    L"MDblClick"
+    L"双击左键",             //LDblClick
+    L"双击右键",             //RDblClick
+    L"双击中键"              //MDblClick
 };
 
 size_t nMouseActions = sizeof(mouseActions) / sizeof(LPCWSTR);

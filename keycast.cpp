@@ -1,4 +1,4 @@
-// Copyright ¬© 2014 Brook Hong. All Rights Reserved.
+// Copyright ? 2014 Brook Hong. All Rights Reserved.
 //
 
 // msbuild /p:platform=win32 /p:Configuration=Release
@@ -61,7 +61,7 @@ BOOL onlyCommandKeys = FALSE;
 BOOL positioning = FALSE;
 BOOL draggableLabel = FALSE;
 UINT tcModifiers = MOD_ALT;
-UINT tcKey = 0x42;      // 0x42 is 'b'
+UINT tcKey = 0x42;       // 0x42 is 'b'
 Color clearColor(0, 127, 127, 127);
 #define BRANDINGMAX 256
 WCHAR branding[BRANDINGMAX];
@@ -294,7 +294,7 @@ static void startFade() {
             keyLabels[i].time = 0;
             if(keyLabels[i].length){
                 eraseLabel(i);
-                // erase keyLabels[i].length times to avoid remaining shadow
+                 // erase keyLabels[i].length times to avoid remaining shadow
                 keyLabels[i].length--;
                 dirty = TRUE;
             }
@@ -655,7 +655,7 @@ void loadSettings() {
     }
     tcModifiers = GetPrivateProfileInt(L"KeyCastOW", L"tcModifiers", MOD_ALT, iniFile);
     tcKey = GetPrivateProfileInt(L"KeyCastOW", L"tcKey", 0x42, iniFile);
-    GetPrivateProfileString(L"KeyCastOW", L"branding", L"Hi there, press any key to try, double click to configure.", branding, BRANDINGMAX, iniFile);
+    // GetPrivateProfileString(L"KeyCastOW", L"branding", L"Hi there, press any key to try, double click to configure.", branding, BRANDINGMAX, iniFile);
     GetPrivateProfileString(L"KeyCastOW", L"comboChars", L"<->", comboChars, 4, iniFile);
     memset(&labelSettings.font, 0, sizeof(labelSettings.font));
     labelSettings.font.lfCharSet = DEFAULT_CHARSET;
@@ -995,12 +995,12 @@ LRESULT CALLBACK WindowFunc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lPara
                 nid.uFlags              = NIF_ICON | NIF_MESSAGE | NIF_TIP;
                 nid.uCallbackMessage    = WM_TRAYMSG;
                 nid.hIcon = LoadIcon( hInstance, MAKEINTRESOURCE(IDI_ICON1));
-                lstrcpy( nid.szTip, L"KeyCast On Windows by brook hong" );
+                lstrcpy( nid.szTip, L"KeyCast On Windows" );
                 Shell_NotifyIcon( NIM_ADD, &nid );
 
                 hPopMenu = CreatePopupMenu();
-                AppendMenu( hPopMenu, MF_STRING, MENU_CONFIG,  L"&Settings..." );
-                AppendMenu( hPopMenu, MF_STRING, MENU_RESTORE,  L"&Restore default settings" );
+                AppendMenu( hPopMenu, MF_STRING, MENU_CONFIG,  L"…Ë÷√" );
+                AppendMenu( hPopMenu, MF_STRING, MENU_RESTORE,  L"ª÷∏¥ƒ¨»œ…Ë÷√" );
 #ifdef _DEBUG
                 AppendMenu( hPopMenu, MF_STRING, MENU_REPLAY,  L"Re&play" );
 #endif

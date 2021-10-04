@@ -1,0 +1,9 @@
+﻿  keycast.cpp
+D:\mywiki\KeyCastOW\keycast.cpp(283,30): warning C4018: “>”: 有符号/无符号不匹配
+D:\mywiki\KeyCastOW\keycast.cpp(456,30): warning C4018: “>”: 有符号/无符号不匹配
+  keylog.cpp
+  正在生成代码
+  Previous IPDB not found, fall back to full compilation.
+  All 121 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  keycastow.vcxproj -> D:\mywiki\KeyCastOW\Release\keycastow.exe
