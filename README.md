@@ -17,8 +17,8 @@ MIT License
 
 -----
 
-## 汉化修改
+## KeyCastOW汉化修改
 
-> UI界面汉化
+> UI界面汉化f.gfc.x..x。。
 
 [点击下载](https://github.com/evi1hack/KeyCastOW/releases/tag/zh-cn)
