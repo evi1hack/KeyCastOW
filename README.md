@@ -20,3 +20,5 @@ MIT License
 ## 汉化修改
 
 > UI界面汉化
+
+[点击下载](https://github.com/evi1hack/KeyCastOW/releases/tag/zh-cn)
